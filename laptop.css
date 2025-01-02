@@ -1,0 +1,151 @@
+body{
+    overflow-x: unset;
+
+}
+
+
+
+
+
+
+/* HOMEPAGE STYLING */
+
+
+/* services! */
+
+.services{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 10rem;
+}
+
+
+.servicesContent{
+    height: 70%;
+}
+
+
+
+.servicesContent p{
+    /* top, right, bottom, left */
+    padding: 2rem 0 3rem 0; 
+}
+
+/* services! END */
+
+
+/* scrolling TEXT START*/
+.scroller{
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollerInner{
+    font-size: 6rem;
+}
+
+.scrollerInner span img{
+    height: 8vh;
+}
+
+/* scrolling TEXT END*/
+
+
+/* footer */
+.TestDivName h2{
+    font-size: 4rem;
+}
+
+.leftSection p{
+    font-size: 2rem;
+}
+
+.drawingLogo{
+    width: 60%;
+
+    background-size: cover;
+}
+
+/* footer END */
+
+/* HOMEPAGE STYLING END */
+
+
+/* PROJECT PROCESS PAGES */
+.explanationTextLeft h2{
+    font-size: 2rem;
+}
+
+.explanationTextLeft p{
+    font-size: 8rem;
+}
+
+/* PROJECT CARDS */
+.overlay{
+    overflow: hidden;
+}
+
+.overlay h3{
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.overlay p{
+    font-size: 1.1rem;
+
+    padding-bottom: 0.5rem;
+}
+
+
+/* aBOUT ME PARA */
+
+.aboutMe{
+    padding: 3rem;
+}
+
+
+/* ptoject process */
+.explanationTextLeft h2{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.explanationTextLeft p{
+    font-size: 1.3rem;
+
+    padding-bottom: 2rem;
+}
+
+.BackButton{
+    font-size: 1.5rem;
+}
+
+
+
+/* ABOUT ME */
+
+.ellaPhoto{
+    left: 100px;
+
+}
+
+.starCute{
+    height: 10vh;
+    left: 80px;
+    top: 40px;
+}
+
+.thatsMe{
+    height: 18vh;
+
+    right: 80px;
+}
+
+.favourites h2{
+    font-size: 4rem;
+
+}

@@ -1,0 +1,195 @@
+
+
+.hamburgerMenu{
+    display: block;
+}
+
+nav ul{
+    display: none;
+}
+
+
+.welcomePage{
+    height: 50vh;
+}
+
+
+
+
+/* CONTACT PAGE STYLING */
+.contactContainer{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactContainerLeft{
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.contactContainerLeft h2{
+    font-size: 3rem;
+
+    padding-top: 4rem;
+}
+
+.contactContainerLeft img{
+    padding-bottom: 4rem;
+}
+
+.contactRight{
+    align-items: center;
+}
+
+.contactRight{
+    padding-bottom: 4rem;
+}
+
+.contactInputs{
+width: 70vw;
+}
+
+/* CONTACT PAGE STYLING */
+
+
+/* PROJECT CARDS */
+
+.cardProjectContainer{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+/* PROJECT CARD HOMEPAGE */
+
+
+.cardProjectContainerHome{
+    grid-template-columns: 0.5fr;   
+    justify-content: center;
+}
+
+.projectCard{
+    justify-items: center;
+}
+
+
+
+/* PROJECT PROCESS */
+.explanationTextLeft h2{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.explanationTextLeft p{
+    font-size: 1rem;
+
+    padding-bottom: 2rem;
+}
+
+
+/* ABOUT */
+
+
+.aboutMe p{
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+.passion{
+    font-size: 2.5rem;
+}
+
+.Eye, .love, .friendly, .webDev, .dog, .crafting, .together,.record{
+    height: 4vh;
+}
+
+.visual{
+    font-size: 2.5rem;
+}
+
+.circleRotate{
+    display: none;
+}
+
+
+/* ABOUT ME */
+
+
+.ellaPhoto{
+    height:60%;
+
+    left: 100px;
+
+}
+
+.starCute{
+    height: 8vh;
+}
+
+.thatsMe{
+    height: 12vh;
+
+    right: 80px;
+}
+
+
+.aboutMePara h2{
+    font-size: 4rem;
+}
+
+.aboutMePara p{
+    font-size: 2rem;
+
+    width: 55ch;
+}
+
+.favourites h2{
+    font-size: 3rem;
+
+}
+
+
+.catDrawing{
+    left: 160px;
+    bottom: 130px;
+}
+
+.catMusic{
+    right: 180px;
+}
+
+.projectProcessContainer{
+flex-direction: column;
+
+}
+
+.explanationTextLeft{
+    width: 100vw;
+    position: unset;
+}
+
+.projectProcessImages{
+    width: 100vw;
+}
+
+
+.BackButton{
+    width: 7vw;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+
+}
+
+.explanationTextLeft p{
+    font-size: 1.5rem;
+
+}
+
+.projectProcessImages{
+    overflow: unset;
+}
+
+.primaryBtn{
+    font-size: 1.4rem;
+}

@@ -1,0 +1,149 @@
+/* button */
+.secondaryBtn{
+    font-size: 1.5rem;
+}
+
+/* INDEX PAGE */
+.circle{
+    height: 30vw;
+    width: 30vw;
+}
+
+
+/* FOOTER */
+.rightSection{
+    display: none;
+}
+
+.leftSection p{
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
+}
+
+.TestDivName h2{
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.Links{
+    padding-left: 0.5rem;
+
+}
+
+
+
+
+/* ABOUT ME */
+.aboutMe p{
+    font-size: 1.6rem;
+    line-height: 4rem;
+}
+
+.photoPlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: unset;
+
+    height: 30vh;
+}
+
+.ellaPhoto{
+    position: unset;
+    rotate: 0deg;
+    height: 100%;
+    margin-top: 3rem;
+
+}
+
+.aboutMePara{
+    min-height: 50vh;
+}
+
+.starCute{
+    display: none;
+}
+
+.thatsMe{
+    display: none;
+}
+
+
+.experienceContainer h2{
+    font-size: 3rem;
+}
+
+.xontainerMMMM h2{
+    font-size: 2rem;
+}
+
+.xontainerMMMM p{
+    font-size: 1.4rem;
+}
+
+.aboutMePara h2{
+    font-size: 3.4rem;
+    width: 20ch;
+}
+
+.flowerCute{
+    display: none;
+}
+
+.aboutMePara p{
+    font-size: 2rem;
+
+    width: 30ch;
+}
+
+
+
+
+
+.favourites h2{
+    font-size: 3rem;
+    width: 20ch;
+}
+
+.book, .nintendo,.catMusic, .catDrawing{
+    height: 10vh;
+}
+
+
+.nintendo{
+    right: 60px;
+    bottom: 100px;
+}
+
+.catDrawing{
+    left: 20px;
+}
+
+.catMusic{
+    right: 50px;
+    top: 70px;
+}
+
+
+
+
+.cardProjectContainer{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.BackButton{
+    width: 12vw;
+}
+
+.explanationTextLeft{
+    min-height: 60vh;
+}
+
+.explanationTextLeft h2{
+    font-size: 1.5rem;
+    }
+
+.explanationTextLeft p{
+font-size: 1.2rem;
+}

@@ -1,0 +1,1484 @@
+
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+
+/* start of HTML element styling */
+
+html{
+    font-size: 65.5%;
+}
+
+
+a, button{
+    /* all:unset removes the inbuilt styling */
+    all: unset;
+}
+
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* end of HTML element styling */
+
+/* Presets for styling */
+
+.primaryBtn{
+    font-size: 2rem;
+    border: 1px solid #1a1a18;
+
+    padding: 1rem;
+    border-radius: 20px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.primaryBtn:hover{
+    cursor: pointer;
+    transition: ease-in-out;
+    background-color: rgb(229, 198, 203, 0.3);
+
+    /* padding = top right bottom left */
+    
+    box-shadow: 6px 3px 15px 1px rgba(0,0,0,0.34);
+}
+
+
+
+
+.secondaryBtn{
+    font-size: 2rem;
+    /* border-bottom: 1px solid #1a1a18; */
+
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+
+}
+
+.secondaryBtn::before{
+    content: '';
+    background-color: rgb(238, 189, 196, 0.2);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    transition: all .3s ease-in-out;
+}
+
+
+.secondaryBtn:hover::before{
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(238, 189, 196, 0.6);
+
+}
+
+
+.secondaryBtn:hover{
+    cursor: pointer;
+    /* border-bottom: 1px solid #502A50; */
+    color: #502A50;
+}
+
+/* end of presets */
+
+/* start of nav css */
+
+nav{
+    height: 10vh;
+    width: 100vw;
+    z-index: 2;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 3rem 0 3rem;
+
+    background: #F0F3FA;
+    position: sticky;
+    top: 0;
+}
+
+
+
+nav img{
+    /* width: 5%; */
+    height: 8vh;
+}
+
+nav img:hover{
+    cursor: pointer;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    /* padding = top right bottom left */
+    padding: 0 1rem 0 1rem;
+    letter-spacing: 2px;
+    font-size: 2rem;
+
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    color: #1a1a18;
+
+    /* border-bottom: solid 2px #1a1a18; */
+}
+
+nav ul li:hover{
+    color: #336d84;
+    cursor: pointer;
+}
+
+.line{
+    height: 3vh;
+    /* padding-left: 0.5rem; */
+}
+
+
+.hamburgerMenu{
+    display: none;
+}
+
+.hamburgerMenu div{
+    height: 0.3vh;
+    width: 3vw;
+    background: #1a1a18;
+    margin: 0.3rem;
+}
+
+.hamburgerMenu:hover{
+    cursor: pointer;
+}
+/* end of nav css */
+
+
+
+.mobileNavLinks{
+    display: none;
+}
+
+.mobileNavLinkContainer{
+    height: 100vh;
+    width: 100vw;
+    background: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1;
+
+}
+
+.mobileNavLinkContainer ul{
+    flex-direction: column;  
+}
+
+
+.mobileNavLinkContainer ul li{
+    list-style: none;
+
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 5rem;
+    line-height: 15rem;
+}
+
+
+/* homepage styling */
+
+
+/* hero section */
+.welcomePage{
+    height: 30vh;
+    width: 100vw;
+}
+
+.welcomeText{
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: end;
+
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.welcomeText p{
+    font-size: 6rem;
+    letter-spacing: 1px;
+
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.coolThing{
+    height: 30vh;
+    width: 100vw;
+
+    display: flex;
+
+}
+
+.coolThing div{
+    height: 100%;
+    width: 50%;
+}
+
+.gradientOne{
+    background-image: linear-gradient(rgb(209 224 230), rgba(51,109,132));
+}
+
+.gradientTwo{
+    background-image: linear-gradient(rgb(238 189 196), rgb(80 42 80));
+}
+/* end of hero section */
+
+
+
+
+/* start of showcased works */
+.scroller{
+    height: 20vh;
+    width: 100vw;
+
+    overflow: hidden;
+    padding: 3rem 0;
+
+    /* background: salmon; */
+    white-space: nowrap;
+    position: relative;
+}
+
+.scroller::before, .scroller:after{
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+
+    content: "";
+    z-index: 1;
+}
+
+.scroller::before{
+    left: 0;
+    background: linear-gradient( to left, rgba(255, 255, 255, 0), white);
+}
+
+.scroller::after{
+    right: 0;
+    background: linear-gradient( to right, rgba(255, 255, 255, 0), white);
+}
+
+.scroller:hover .scrollerInner{
+    animation-play-state: paused;
+}
+
+.scrollerInner{
+    font-size: 10rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    display: inline-block;
+    animation: 30s slide infinite linear;
+    
+}
+
+.scrollerInner span{
+    margin: 0 4rem;
+}
+
+.scrollerInner span img{
+    height: 10vh;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
+
+
+.cardProjectContainerHome{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    flex-wrap: wrap;
+    grid-row-gap: 8rem;
+    grid-column-gap: 2rem;
+
+    padding: 5rem 2rem 0 2rem;
+}
+
+
+
+
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 2rem;
+
+    
+}
+
+/* end of showcased works */
+
+
+
+/* ABOUT ME START */
+.aboutMe{
+    min-height: 70vh;
+    width: 100vw;
+
+    padding: 3rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe p{
+    font-size: 3.8rem;
+    text-align: center;
+
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 7rem;
+}
+
+.passion{
+    font-size: 4.5rem;
+
+    font-family: "gautreaux", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.seamless{
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.Eye, .love, .friendly, .webDev, .dog, .crafting, .together,.record{
+    height: 7vh; 
+}
+
+.blend{
+    font-family: "bookmania", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.visual{
+    font-family: "lust-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.6rem;
+}
+
+.inter{
+    font-family: "alda", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+.captivating{
+    font-family: "alda", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.strive{
+    font-family: "new-spirit-condensed", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.great{
+    font-family: "new-spirit", serif;
+font-weight: 300;
+font-style: italic;
+
+}
+
+.ideas{
+    font-family: "bookmania", serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+
+
+/* about me end */
+
+
+/* services start */
+.serviceHeader{
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 15rem;
+}
+
+.serviceHeader h2{
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 6rem;
+
+    border-bottom: 2px solid #1a1a18;
+}
+
+.services{
+    min-height: 100vh;
+    width: 100vw;
+
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* top, right, bottom, left */
+    padding: 0 2rem 0 2rem;
+}
+
+.servicesContent{
+    height: 80%;
+    width: 30%;
+    /* border: 2px solid #1a1a18; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.circle{
+    overflow: hidden;
+    
+    border: 2px solid #2a2c31;
+
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+
+
+}
+
+.servicesContent h2{
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.servicesContent p{
+    padding: 3rem 0 2rem 0; 
+    text-align: center;
+    width: 28ch;
+    /* padding-top: 1rem; */
+
+    font-size: 1.8rem;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* services end */
+
+
+
+
+
+
+
+
+
+
+/* projects page styling */
+
+.Work{
+    height: 30vh;
+    width: 100vw;
+    
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+    /* padding = top right bottom left */
+    padding: 0 0 2rem 2rem;
+}
+
+
+
+.Work h2{
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 6rem;
+}
+
+
+.cardProjectContainer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    flex-wrap: wrap;
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+
+    padding: 0 2rem 4rem 2rem;
+}
+
+
+
+.cardProjectContainerHome{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* flex-wrap: wrap; */
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+
+    padding: 0 2rem 0 2rem;
+}
+  
+.projectCard{
+    position: relative;
+
+    /* start at a width of 33.3%, then flexbox will decide if it should grow or 
+    shrink based on the container's available space. */
+    flex-basis: calc(33.333% - 10px);
+    margin: 0.5rem;
+    border: 1px solid;
+    box-sizing: border-box;
+
+    /* overflow: hidden; */
+}
+
+
+
+.content{
+    position: relative;
+    overflow: hidden;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img{
+    width: 100%;
+    object-fit: contain;
+    /* display: block; */
+    transition-duration: 0.5s;
+    
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #F0F3FA 80%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding = top right bottom left */
+    padding: 0 4rem 2rem 4rem;
+    text-align: center;
+    font-size: 2rem;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    margin-bottom: 0.5rem;
+    margin-top: 80%;
+}
+
+.overlay p{
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    padding-bottom: 1rem;
+}
+
+
+
+.boxLhover img{
+    transform: scale(1.2);
+}
+
+.content:hover .overlay{
+    height: 100%;
+}
+  
+.projectCard:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+  
+.projectCard .content {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;    
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* contact page styling */
+
+
+.contactContainer{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactContainerLeft{
+    position: relative;
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    padding: 2rem;
+
+    
+
+    /* padding-left: 7rem; */
+}
+
+.contactContainerLeft h2{
+    position: absolute;
+    bottom: 200px;
+
+    font-size: 6rem;
+
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    width: 15ch;
+}
+
+
+/* ROATING TEXT CONTACT */
+.circleRotate {
+	position: absolute;
+	width: 60vh;
+	height: 60vh;
+
+    left: -120px;
+    bottom: -600px;
+
+
+
+	/* border-radius: 100vmax; */
+	display: flex;
+	align-items: flex-start;
+	justify-content: left;
+}
+
+
+.text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+    
+
+	animation: textRotation 8s linear infinite;
+}
+
+@keyframes textRotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text span {
+	position: absolute;
+	left: 50%;
+	font-size: 4rem;
+	transform-origin: 0 260px;
+}
+
+
+/* .contactContainerLeft h2{
+    font-size: 6rem;
+
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contactContainerLeft img{
+    height: 45vh;
+} */
+
+
+
+
+.contactContainerRight{
+    height: 100%;
+    width: 50%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactRight{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactRightTitle h2{
+    font-size: 4rem;
+
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    border-bottom: 3px solid #502A50;
+}
+
+
+.contactInputs{
+    width: 40vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    padding-left: 1.2rem;
+    color: #666;
+    border-radius: 10px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    border: 2px solid #1a1a18;
+}
+
+.contactRight textarea{
+    height: 20vh;
+    padding-top: 15px;
+    border-radius: 10px;
+
+    border: 2px solid #1a1a18;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contactInputs:focus{
+    border: 2px solid #336d84;
+}
+
+.contactInputs::placeholder{
+    color: #336d84;
+}
+
+.contactRight button{
+    display: flex;
+    align-items: center;
+    color: #1a1a18;
+    gap: 10px;
+    /* border: none; */
+    
+
+    font-size: 2rem;
+    border: 1px solid #1a1a18;
+
+    padding: 1rem;
+    border-radius: 20px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.contactRight button:hover{
+    cursor: pointer;
+    transition: ease-in-out;
+    background-color: rgb(229, 198, 203, 0.3);
+
+    /* padding = top right bottom left */
+    
+    box-shadow: 6px 3px 15px 1px rgba(0,0,0,0.34);
+}
+
+.contactRight button img{
+    height: 1.5vh;
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+.contactFooter{
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+
+    display: flex;
+    border-top: 2px solid #1a1a18;
+    background: #ffffff;
+    
+}
+
+
+
+
+
+
+/* footer start */
+footer{
+    height: 50vh;
+    width: 100vw;
+
+    display: flex;
+    border-top: 2px solid #1a1a18;
+}
+
+.leftSection{
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+    /* padding = top right bottom left */
+    padding: 6rem 0rem 6rem 3rem;
+}
+
+
+
+.TestDivName h2{
+    font-size: 6rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    padding-left: 2rem;
+}
+
+.Links{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    
+    padding-left: 2rem;
+}
+
+.Links a{
+    margin: 0.5rem;
+}
+
+.leftSection p {
+    font-size: 2.2rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    padding-left: 2rem;
+}
+
+
+
+
+.rightSection{
+    height: 100%;
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+
+    /* padding = top right bottom left */
+    padding: 6rem 0;
+
+}
+
+.drawingLogo{
+    height: 100%;
+    width: 40%;
+
+    padding-left: 5rem;
+    
+}
+
+.drawingLogo img{
+    /* height: 40vh; */
+    width: 25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project Process page styling */
+.projectProcessContainer {
+    display: flex;
+    height: 90vh; 
+    width: 100vw;
+  }
+  
+  /* Left side (text area) takes up 30% of the width */
+  .explanationTextLeft {
+    width: 30vw; 
+    min-height: 60vh;
+    padding: 2rem;
+    /* background-color: #f0f0f0; */
+    
+    display: flex;
+    flex-direction: column;
+    
+
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Right side (image area) takes up 70% of the width */
+  .projectProcessImages {
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: #ffffff;
+
+    overflow: auto;
+  }
+  
+  .ProcessImages {
+    width: 100%; 
+    height: 60%;
+    margin: 10px 0;
+    text-align: center;
+    
+    /* padding-right: 2rem; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: separate; 
+  }
+  
+  .ProcessImages img {
+    width: 100%; /* Make image fill the box */
+    height: 100%;
+    object-fit: contain;
+
+  }
+  
+
+  .explanationTextLeft h2{
+    font-size: 2.5rem;
+    font-family: "bookmania", serif;
+    font-weight: 500;
+    font-style: normal;
+
+    padding-bottom: 1rem;
+  }
+  
+  .explanationTextLeft p{
+    font-size: 1.5rem;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    
+    white-space: pre-line;
+    padding-bottom: 3rem;
+  }
+  
+
+  .briefContext{
+    padding-top: 2rem;
+  }
+
+
+
+.BackButton{
+    width: 6vw;
+    font-size: 2rem;
+    border: 1px solid #1a1a18;
+
+    padding: 1rem;
+    border-radius: 20px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.BackButton:hover{
+    cursor: pointer;
+    transition: ease-in-out;
+    background-color: rgb(229, 198, 203, 0.3);
+
+    /* padding = top right bottom left */
+    
+    box-shadow: 6px 3px 15px 1px rgba(0,0,0,0.34);
+}
+
+
+
+
+/* ABOOUT ME PAGE */
+
+.photoPlace{
+    height: 60vh;
+    width: 100vw;
+
+    position: relative;
+}
+
+.ellaPhoto{
+    height: 80%;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 70px;
+    left: 260px;
+    rotate: -10deg;
+    z-index: 1;
+}
+
+.starCute{
+    height: 12vh;
+    position: absolute;
+    left: 180px;
+    top: 60px;
+}
+
+.thatsMe{
+    height: 20vh;
+
+    position: absolute;
+    right: 200px;
+    top: 160px;
+}
+
+.aboutMePara{
+    min-height: 70vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2rem;
+    position: relative;
+}
+
+.flowerCute{
+    height: 8vh;
+    margin-left: 1rem;
+}
+
+.aboutMePara h2{
+    font-size: 5rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+
+    display: block;
+    width: 30ch;
+
+    line-height: 3rem;
+
+    padding-bottom: 3rem;
+
+}
+
+.aboutMePara p{
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+
+    width: 68ch;
+}
+
+.Experience{
+    min-height: 50vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.experienceContainer{
+    height: 100%;
+    width: 70%;
+    
+    padding-top: 2rem;
+}
+
+.experienceContainer h2{
+    font-size: 3rem;
+    font-family: "bookmania", serif;
+    font-weight: 500;
+    font-style: normal;
+
+    border-bottom: 1px solid #1a1a18;
+}
+
+.xontainerMMMM{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    /* padding-top: 4rem; */
+    margin-top: 2rem;
+}
+
+.xontainerMMMM h2{
+    font-size: 3rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+    
+    border-bottom: none;
+     
+}
+
+.xontainerMMMM p{
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+
+.currentFavs{
+    height: 80vh;
+    width: 100vw;
+
+    background: skyblue;
+}
+
+
+/* PROGRESS BARS */
+
+
+
+.skillBar h2{
+    font-size: 4rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.skillBar h3{
+    font-size: 1.5rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0.5rem;
+}
+
+
+.skill{
+    min-height: 90vh;
+    width: 100vw;
+}
+
+.skillBar{
+    min-height: 100%;
+    width: 90%;
+    margin: 6rem auto;
+    color: #1a1a18;
+    padding: 2rem;
+    /* box-shadow: 0 14px 28px rgb(0, 0, 0, 0.3), 0 10px 10px rgb(0, 0, 0, 0.6); */
+}
+
+.skillBar li{
+    list-style: none;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.bar{
+    display: block;
+    height: 3vh;
+    border: 1px solid #1a1a18;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgb(0, 0, 0, 0.12), 0 1px 2px rgb(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgb(0, 0, 0, 0.3), 0 10px 10px rgb(0, 0, 0, 0.6);
+
+}
+
+.bar span{
+    height: 3vh;
+    float: left;
+    background: linear-gradient(135deg, rgba(182, 223, 235, 1)0%, rgba(51, 109, 132, 1)100%);
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 80%;
+    animation: css 3s;
+}
+
+.JS{
+    width: 30%;
+    animation: JS 3s;
+}
+
+.PhotoShop{
+    width: 90%;
+    animation: PhotoShop 3s;
+}
+
+.Illustrator{
+    width: 100%;
+    animation: Illustrator 3s;
+}
+
+.Indesign{
+    width: 90%;
+    animation: Indesign 3s;
+}
+
+
+
+/* FAVS */
+
+.favs{
+    height: 80vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.favourites h2{
+    font-size: 5rem;
+    font-family: "bookmania", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    width: 40ch;
+}
+
+.book, .nintendo,.catMusic, .catDrawing{
+    height: 12vh;
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
+}
+
+.book{
+    left: 70px;
+    top: 100px;
+}
+
+.nintendo{
+    right: 160px;
+    bottom: 150px;
+}
+
+.catDrawing{
+    left: 400px;
+    bottom: 130px;
+}
+
+.catMusic{
+    right: 300px;
+    top: 60px;
+}
+
+
+
+
+
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes JS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes PhotoShop{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes Illustrator{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes Indesign{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }}
