@@ -1,0 +1,121 @@
+
+
+
+font-family: "bd-orange-variable", sans-serif;
+font-variation-settings: "wght" 527;
+
+
+
+
+
+
+Reenie Beanie Regular
+font-family: "reenie-beanie", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+
+
+
+
+
+
+Gautreaux Light
+font-family: "gautreaux", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Gautreaux Medium
+font-family: "gautreaux", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+
+
+Bookmania Light
+font-family: "bookmania", serif;
+font-weight: 300;
+font-style: normal;
+
+
+Bookmania Regular
+font-family: "bookmania", serif;
+font-weight: 400;
+font-style: normal;
+
+
+Bookmania Regular Italic
+font-family: "bookmania", serif;
+font-weight: 400;
+font-style: italic;
+
+
+Bookmania Semibold Italic
+font-family: "bookmania", serif;
+font-weight: 600;
+font-style: italic;
+
+
+New Spirit Light
+font-family: "new-spirit", serif;
+font-weight: 300;
+font-style: normal;
+
+
+New Spirit Light Italic
+font-family: "new-spirit", serif;
+font-weight: 300;
+font-style: italic;
+
+
+New Spirit Regular
+font-family: "new-spirit", serif;
+font-weight: 400;
+font-style: normal;
+
+
+New Spirit Regular Italic
+font-family: "new-spirit", serif;
+font-weight: 400;
+font-style: italic;
+
+
+New Spirit Medium
+font-family: "new-spirit", serif;
+font-weight: 500;
+font-style: normal;
+
+
+New Spirit Medium Italic
+font-family: "new-spirit", serif;
+font-weight: 500;
+font-style: italic;
+
+
+New Spirit Regular Condensed
+font-family: "new-spirit-condensed", serif;
+font-weight: 400;
+font-style: normal;
+
+
+New Spirit Regular Condensed Italic
+font-family: "new-spirit-condensed", serif;
+font-weight: 400;
+font-style: italic;
+
+
+New Spirit Bold Condensed
+font-family: "new-spirit-condensed", serif;
+font-weight: 700;
+font-style: normal;
+
+
+New Spirit Bold Condensed Italic
+font-family: "new-spirit-condensed", serif;
+font-weight: 700;
+font-style: italic;
+
+
