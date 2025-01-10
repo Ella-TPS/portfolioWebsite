@@ -620,7 +620,8 @@ font-style: normal;
 
 .content img{
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     /* display: block; */
     transition-duration: 0.5s;
     
@@ -926,6 +927,10 @@ footer{
 
     display: flex;
     border-top: 2px solid #1a1a18;
+    position: relative;
+    z-index: 1;
+
+    background: #ffffff;
 }
 
 .leftSection{
@@ -1009,7 +1014,10 @@ footer{
 
 
 
-
+iframe{
+    height: 100%;
+    width: 100%;
+}
 
 
 
